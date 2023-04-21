@@ -1,0 +1,169 @@
+body{
+  margin: 0;
+}
+
+.background {
+ display: flex;
+ justify-content: center;
+ padding: 50px 0px;
+  height:100vh;
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(../assets/Chat-Bg1.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: right;
+  /* background: linear-gradient(150deg, #d9dbe2, #9109d0 100%, #a377ea 0); */
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  flex-wrap: wrap;
+}
+
+.auth-form {
+  padding-top: 33px;
+  width: 300px;
+  height:320px;
+ text-align: center;
+  background-color: #4a5162;
+  border-radius: 24px;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 68%);
+  padding: 30px 0px;
+}
+
+.text-insp{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.share{
+  color: #d945f4;
+  font-size: 70px;
+}
+
+.create{
+  font-size: 30px;
+  padding-left: 80px;
+}
+
+.connect{
+  font-size: 40px;
+  letter-spacing: 15px;
+}
+
+.auth-title {
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+.text-input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background-color: #4a5162;
+  outline: none;
+  border-width: 0px;
+  border-bottom: 2px solid #726dfe;
+  color: white;
+  border-radius: 20px;
+}
+
+.text-input::placeholder {
+  color: hsla(0, 0%, 100%, 0.568);
+}
+
+.submit-button {
+  width: 80%;
+  padding: 14px;
+  border-radius: 4px;
+  border-width: 0px;
+  cursor: pointer;
+  background-color: #230d2a;
+  color: white;
+  outline: none;
+  margin-top: 40px;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.submit-button::hover {
+  background-color: #938ffe;
+}
+
+.input-container{
+  margin: auto !important;
+  width: 280px;
+}
+
+
+@media (min-width: 1092px){
+  .background{
+    height: 87vh;
+  }
+}
+
+
+@media (max-width: 375px){
+  .background{
+    background-position:left;
+  }
+}
+
+@media(min-width:600px){
+  .auth-container{
+    flex-wrap: nowrap !important;
+  }
+  .text-insp{
+    margin-top: 50px;
+    margin-right: 20px;
+    
+  }
+  .text-insp h1>span{
+    line-height: 80px;
+  }
+
+  .share{
+    color: #d945f4;
+    font-size: 80px;
+  }
+  
+  .create{
+    font-size: 40px;
+    padding-left: 80px;
+  }
+  
+  .connect{
+    font-size: 50px;
+    letter-spacing: 15px;
+  }
+  .background{
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 610px){
+  .auth-form{
+    padding: 0px 10px;
+  }
+}
+
+@media(min-width: 992px){
+  .auth-container{
+   justify-content: right;
+   padding-top: 100px;
+  }
+  .text-insp{
+    margin-top: 20px;
+  }
+  .auth-form{
+    padding-top: 30px;
+  }
+}
